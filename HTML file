@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Seiko Watches</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+</head>
+<body>
+    <header>
+        <h1>Custom Seiko Watches</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Discover Your Perfect Seiko</h2>
+            <p>Handcrafted custom designs for enthusiasts and collectors.</p>
+            <a href="#shop" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="shop">
+        <h2>Our Collection</h2>
+        <div class="products">
+            <div class="product">
+                <img src="watch1.jpg" alt="Seiko Watch 1">
+                <h3>Seiko Mod 001</h3>
+                <p>$499.99</p>
+                <div class="payment-buttons">
+                    <button id="apple-pay-button-1" class="apple-pay-button">Buy with Apple Pay</button>
+                    <div id="paypal-button-container-1"></div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="watch2.jpg" alt="Seiko Watch 2">
+                <h3>Seiko Mod 002</h3>
+                <p>$549.99</p>
+                <div class="payment-buttons">
+                    <button id="apple-pay-button-2" class="apple-pay-button">Buy with Apple Pay</button>
+                    <div id="paypal-button-container-2"></div>
+                </div>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about Seiko watches. Each piece is meticulously customized to meet the unique preferences of our customers.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Custom Seiko Watches. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
